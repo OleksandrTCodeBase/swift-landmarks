@@ -10,11 +10,20 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "bird")
-                .imageScale(.large)
-            Text("Landmarks")
-                .font(.largeTitle)
-                .italic()
+            VStack(alignment: .leading) {
+                Image(systemName: "bird")
+                    .imageScale(.large)
+                Text("Landmarks")
+                    .font(.largeTitle)
+                    .italic()
+                HStack {
+                    Text("Joshua Tree National Park")
+                        .font(.subheadline)
+                    Spacer()
+                    Text("California")
+                        .font(.subheadline)
+                }
+            }
         }
         .padding()
         .foregroundColor(.accentColor)
