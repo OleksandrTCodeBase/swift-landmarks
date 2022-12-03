@@ -12,13 +12,12 @@ struct ContentView: View {
         VStack {
             Image(systemName: "bird")
                 .imageScale(.large)
-                .foregroundColor(.accentColor)
             Text("Landmarks")
                 .font(.largeTitle)
-                .foregroundColor(.accentColor)
                 .italic()
         }
         .padding()
+        .foregroundColor(.accentColor)
     }
 }
 
