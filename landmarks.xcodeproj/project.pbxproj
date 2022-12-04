@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		726CD68F293CF58C0048A313 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726CD68E293CF58C0048A313 /* LandmarkRow.swift */; };
 		727B364D293BB40900CB4B3F /* landmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B364C293BB40900CB4B3F /* landmarksApp.swift */; };
 		727B364F293BB40900CB4B3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B364E293BB40900CB4B3F /* ContentView.swift */; };
 		727B3651293BB40A00CB4B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727B3650293BB40A00CB4B3F /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		726CD68E293CF58C0048A313 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		727B3649293BB40900CB4B3F /* landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		727B364C293BB40900CB4B3F /* landmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landmarksApp.swift; sourceTree = "<group>"; };
 		727B364E293BB40900CB4B3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				727B364C293BB40900CB4B3F /* landmarksApp.swift */,
+				726CD68E293CF58C0048A313 /* LandmarkRow.swift */,
 				72A2977E293CBD5F00162633 /* Views */,
 				72A2977F293CBD6F00162633 /* Model */,
 				72A29780293CBD7E00162633 /* Resources */,
@@ -302,6 +305,7 @@
 				727B364D293BB40900CB4B3F /* landmarksApp.swift in Sources */,
 				727B3677293BC61400CB4B3F /* CircleImage.swift in Sources */,
 				72A29764293CB9E300162633 /* Landmark.swift in Sources */,
+				726CD68F293CF58C0048A313 /* LandmarkRow.swift in Sources */,
 				72A2977C293CBBB000162633 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
