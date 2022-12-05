@@ -8,36 +8,38 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    var landmark: Landmark
+    
     var body: some View {
-        VStack {
+        ScrollView {
             VStack {
-                MapView()
+                MapView(coordinate: landmark.locationCoordinate)
                     .ignoresSafeArea(edges: .top)
                     .frame(height: 300)
                 
-                CircleImage()
+                CircleImage(image: landmark.image)
                     .offset(y: -130)
                     .padding(.bottom, -130)
                 
                 VStack(alignment: .leading) {
-                    Image(systemName: "bird")
-                        .imageScale(.large)
-                    Text("Landmarks")
+                    Text(landmark.name)
                         .font(.largeTitle)
                         .italic()
+                    
                     HStack {
-                        Text("Joshua Tree National Park")
+                        Text(landmark.park)
                         Spacer()
-                        Text("California")
+                        Text(landmark.state)
                            
                     }
                     .font(.subheadline)
                     .foregroundColor(.secondary)
+                    
                     Divider()
                     
-                    Text("About Turtle Rock")
+                    Text("About \(landmark.name)")
                         .font(.title2)
-                    Text("Description of the Tutrle Rock place")
+                    Text(landmark.description)
                 }
             }
             .padding()
@@ -45,11 +47,13 @@ struct LandmarkDetail: View {
             
             Spacer()
         }
+        .navigationTitle(landmark.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkDetail()
+        LandmarkDetail(landmark: landmarks[0])
     }
 }
